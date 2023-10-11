@@ -1,0 +1,682 @@
+{
+	"uuid": "bebc5f08-2734-4687-80bf-69280f9a4efa",
+	"historyId": "проверка блокировки поля количество при создании документа Заказ (услуга).проверка блокировки поля количество при создании документа Заказ (услуга)",
+	"name": "проверка блокировки поля количество при создании документа Заказ (услуга)",
+	"fullName": null,
+	"testCaseId": null,
+	"start": 1697030285564,
+	"stop": 1697030295250,
+	"statusDetails": {
+		"known": false,
+		"muted": false,
+		"flaky": false,
+		"message": "Для ячейки <Количество> таблицы <Товары> текущее значение равно:",
+		"trace": "{ВнешняяОбработка.РаботаСИнтерфейсом.Форма.Форма.Форма(6022)}: {ВнешняяОбработка.РаботаСИнтерфейсом.Форма.Форма.Форма(5996)}: Для ячейки <Количество> таблицы <Товары> текущее значение равно:\n\n, а ожидалось:\n3\n\nТехнические данные:\n        ЗаголовокАктивногоОкна: Заказ 000000053 от 11.10.2023 11:35:56 *\n        ИмяАктивнойФормы: Документ.Заказ.Форма.ФормаДокумента\n        ИмяФичи: проверка блокировки поля количество при создании документа Заказ (услуга)\n        ИмяСценария: проверка блокировки поля количество при создании документа Заказ (услуга)\n        НомерСтрокиДерева: 31\n        НомерСтрокиФичи: 41\n        ПолныйПутьКФиче: Z:\\VATest\\Модуль 6\\проверка блокировки поля количество в документе Заказ(услуга).feature\n        ИмяФайла: Z:\\VATest\\vanessa-automation\\features\\Libraries\\UITestRunner\\step_definitions\\РаботаСИнтерфейсом.epf\n        ИмяПроцедуры: ВТаблицеПолеИмеетЗначение\n        ИмяРаннера: DESKTOP-5ND5995\n        ИмяКлиентаТестирования: Этот клиент\n        СинонимКлиентаТестирования: \n        ТипКлиентаТестирования: Тонкий\n        СтрокаСоединения: File=\"Z:\\Загрузки\\1C Base\\Platform8Demo\";\n        ДопПараметрыПодключения: /N\"Администратор\" \n        PIDКлиентаТестирования: 0\n        ВерсияVA: ver 1.2.040.20\n        ВерсияПлатформы: 8.3.23.1782\n        ТипПлатформы: Windows x86\n        РежимСовместимостиTestManager: НеИспользовать\n        ВремяРаботыСценария: 0:00:10 (ч:м:с)\n        ДатаВремяОшибки: 11.10.2023 16:18:15"
+	},
+	"status": "failed",
+	"stage": "finished",
+	"steps": [
+		{
+			"name": "И я закрываю все окна клиентского приложения",
+			"start": 1697030286128,
+			"stop": 1697030286238,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": []
+		},
+		{
+			"name": "* создание шапки документа Заказа(услуга)",
+			"start": 1697030286351,
+			"stop": 1697030287266,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "Дано Я открываю навигационную ссылку \"e1cib/data/Документ.Заказ?ref=85dc080027c98cc511ee68112ddaf260\"",
+					"start": 1697030286351,
+					"stop": 1697030286355,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "e1cib/data/Документ.Заказ?ref=85dc080027c98cc511ee68112ddaf260"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "И из выпадающего списка с именем \"Организация\" я выбираю точное значение 'ООО \"Товары\"'",
+					"start": 1697030286355,
+					"stop": 1697030286674,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Организация"
+						},
+						{
+							"name": "Парам2",
+							"value": "ООО \"Товары\""
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "И я нажимаю кнопку выбора у поля с именем \"Покупатель\"",
+					"start": 1697030286700,
+					"stop": 1697030286865,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Покупатель"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "И в таблице \"Список\" я перехожу к строке:",
+					"start": 1697030286865,
+					"stop": 1697030287059,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Список"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "63994d02-b945-45e1-99d5-ac818f77a1c6-attachment.csv",
+							"type": "text/csv"
+						}
+					],
+					"steps": []
+				},
+				{
+					"name": "И в таблице \"Список\" я выбираю текущую строку",
+					"start": 1697030287059,
+					"stop": 1697030287084,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Список"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "И из выпадающего списка с именем \"Склад\" я выбираю точное значение 'Средний'",
+					"start": 1697030287086,
+					"stop": 1697030287172,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Склад"
+						},
+						{
+							"name": "Парам2",
+							"value": "Средний"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "И из выпадающего списка с именем \"Валюта\" я выбираю точное значение 'Рубли'",
+					"start": 1697030287172,
+					"stop": 1697030287266,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Валюта"
+						},
+						{
+							"name": "Парам2",
+							"value": "Рубли"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "* заполнение табличной части (услуга)",
+			"start": 1697030287266,
+			"stop": 1697030289017,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "И в таблице \"Товары\" я нажимаю на кнопку с именем 'ТоварыДобавить'",
+					"start": 1697030287266,
+					"stop": 1697030287310,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Товары"
+						},
+						{
+							"name": "Парам2",
+							"value": "ТоварыДобавить"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "И в таблице \"Товары\" я нажимаю кнопку выбора у реквизита с именем \"ТоварыТовар\"",
+					"start": 1697030287310,
+					"stop": 1697030287371,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Товары"
+						},
+						{
+							"name": "Парам2",
+							"value": "ТоварыТовар"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "И в таблице \"Список\" я перехожу к строке:",
+					"start": 1697030287371,
+					"stop": 1697030287583,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Список"
+						}
+					],
+					"attachments": [
+						{
+							"name": "table",
+							"source": "f15066c8-6c99-4f6c-a104-e744949812fe-attachment.csv",
+							"type": "text/csv"
+						}
+					],
+					"steps": []
+				},
+				{
+					"name": "И в таблице \"Список\" я выбираю текущую строку",
+					"start": 1697030287583,
+					"stop": 1697030287680,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Список"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "И в таблице \"Товары\" я завершаю редактирование строки",
+					"start": 1697030287680,
+					"stop": 1697030287705,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Товары"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "* проверка недоступности редактирования поля количество",
+					"start": 1697030287705,
+					"stop": 1697030289017,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [],
+					"attachments": [],
+					"steps": [
+						{
+							"name": "Когда Проверяю шаги на Исключение:",
+							"start": 1697030287705,
+							"stop": 1697030289017,
+							"status": "passed",
+							"stage": "finished",
+							"statusDetails": {
+								"known": false,
+								"muted": false,
+								"flaky": false
+							},
+							"parameters": [],
+							"attachments": [
+								{
+									"name": "table",
+									"source": "099d66a0-34b6-4da0-beed-cb700651ddc6-attachment.csv",
+									"type": "text/csv"
+								}
+							],
+							"steps": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "* проверка итогового количества по документу",
+			"start": 1697030289017,
+			"stop": 1697030289030,
+			"status": "passed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "И элемент формы с именем \"ТоварыИтогКоличество\" стал равен '1'",
+					"start": 1697030289017,
+					"stop": 1697030289017,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "ТоварыИтогКоличество"
+						},
+						{
+							"name": "Парам2",
+							"value": "1"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				},
+				{
+					"name": "И элемент формы с именем \"ТоварыИтогСумма\" стал равен '250'",
+					"start": 1697030289025,
+					"stop": 1697030289030,
+					"status": "passed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "ТоварыИтогСумма"
+						},
+						{
+							"name": "Парам2",
+							"value": "250"
+						}
+					],
+					"attachments": [],
+					"steps": []
+				}
+			]
+		},
+		{
+			"name": "* ввожу необходимое количество",
+			"start": 1697030289030,
+			"stop": 1697030295250,
+			"status": "failed",
+			"stage": "finished",
+			"statusDetails": {
+				"known": false,
+				"muted": false,
+				"flaky": false
+			},
+			"parameters": [],
+			"attachments": [],
+			"steps": [
+				{
+					"name": "И в таблице 'Товары' поле 'Количество' имеет значение '3'",
+					"start": 1697030289030,
+					"stop": 1697030295250,
+					"status": "failed",
+					"stage": "finished",
+					"statusDetails": {
+						"known": false,
+						"muted": false,
+						"flaky": false,
+						"message": "Для ячейки <Количество> таблицы <Товары> текущее значение равно:",
+						"trace": "{ВнешняяОбработка.РаботаСИнтерфейсом.Форма.Форма.Форма(6022)}: {ВнешняяОбработка.РаботаСИнтерфейсом.Форма.Форма.Форма(5996)}: Для ячейки <Количество> таблицы <Товары> текущее значение равно:\n\n, а ожидалось:\n3\n\nТехнические данные:\n        ЗаголовокАктивногоОкна: Заказ 000000053 от 11.10.2023 11:35:56 *\n        ИмяАктивнойФормы: Документ.Заказ.Форма.ФормаДокумента\n        ИмяФичи: проверка блокировки поля количество при создании документа Заказ (услуга)\n        ИмяСценария: проверка блокировки поля количество при создании документа Заказ (услуга)\n        НомерСтрокиДерева: 31\n        НомерСтрокиФичи: 41\n        ПолныйПутьКФиче: Z:\\VATest\\Модуль 6\\проверка блокировки поля количество в документе Заказ(услуга).feature\n        ИмяФайла: Z:\\VATest\\vanessa-automation\\features\\Libraries\\UITestRunner\\step_definitions\\РаботаСИнтерфейсом.epf\n        ИмяПроцедуры: ВТаблицеПолеИмеетЗначение\n        ИмяРаннера: DESKTOP-5ND5995\n        ИмяКлиентаТестирования: Этот клиент\n        СинонимКлиентаТестирования: \n        ТипКлиентаТестирования: Тонкий\n        СтрокаСоединения: File=\"Z:\\Загрузки\\1C Base\\Platform8Demo\";\n        ДопПараметрыПодключения: /N\"Администратор\" \n        PIDКлиентаТестирования: 0\n        ВерсияVA: ver 1.2.040.20\n        ВерсияПлатформы: 8.3.23.1782\n        ТипПлатформы: Windows x86\n        РежимСовместимостиTestManager: НеИспользовать\n        ВремяРаботыСценария: 0:00:10 (ч:м:с)\n        ДатаВремяОшибки: 11.10.2023 16:18:15"
+					},
+					"parameters": [
+						{
+							"name": "Парам1",
+							"value": "Товары"
+						},
+						{
+							"name": "Парам2",
+							"value": "Количество"
+						},
+						{
+							"name": "Парам3",
+							"value": "3"
+						}
+					],
+					"attachments": [
+						{
+							"name": "ТекущееЗначениеТаблицы.mxl",
+							"source": "c34c66a2-2f6a-4bd6-8abf-f95d53e94d93-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "ТекущееЗначениеТаблицы.html",
+							"source": "1afdc6f4-df52-4bf4-9593-43a12b0841cc-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "ЖурналРегистрации.mxl",
+							"source": "5715cc73-26ee-41e5-a1e1-e62bf3de7d13-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "ЖурналРегистрации.html",
+							"source": "80d1619b-d64a-4c13-b799-3769958118c4-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "ЖурналРегистрации.xlsx",
+							"source": "4fe53398-1cd4-474a-b184-6a38a7a65919-attachment.xlsx",
+							"type": "xlsx"
+						},
+						{
+							"name": "СостояниеАктивнойФормы.mxl",
+							"source": "9afe92b2-0315-4c01-9f5a-e456f144cb6e-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "СостояниеАктивнойФормы.html",
+							"source": "487ca2f4-19a0-4f25-8bbd-4e8519544b28-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "СостояниеАктивнойФормы.xlsx",
+							"source": "20788d75-efb1-4c1f-af5f-539ce536d795-attachment.xlsx",
+							"type": "xlsx"
+						},
+						{
+							"name": "СостояниеВсехФорм.mxl",
+							"source": "320f5fbe-c719-4f94-a2d7-b59b614e42e3-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "СостояниеВсехФорм.html",
+							"source": "3f41501a-17e8-48ec-90bf-9c6aac4f171d-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "СостояниеВсехФорм.xlsx",
+							"source": "bc40a600-732c-4d46-84a4-31167d7189b6-attachment.xlsx",
+							"type": "xlsx"
+						},
+						{
+							"name": "ДанныеОСетевыхСоединениях.txt",
+							"source": "c32fdcc6-ce10-4668-970d-5d31d521418e-attachment.txt",
+							"type": "txt"
+						},
+						{
+							"name": "ДанныеОПроцессахОС.txt",
+							"source": "ba9614d0-0f66-4a80-8e03-485f3f78ea6c-attachment.txt",
+							"type": "txt"
+						},
+						{
+							"name": "ЗначенияПеременных.mxl",
+							"source": "078db06f-27b3-47f4-b178-a2d1c3114a8d-attachment.mxl",
+							"type": "mxl"
+						},
+						{
+							"name": "ЗначенияПеременных.html",
+							"source": "fa81d1da-1bb1-4974-9626-1577276d16f4-attachment.html",
+							"type": "html"
+						},
+						{
+							"name": "screenshot",
+							"source": "v8_1671_13b.png",
+							"type": "image/png"
+						}
+					],
+					"steps": []
+				}
+			]
+		}
+	],
+	"parameters": [],
+	"labels": [
+		{
+			"name": "story",
+			"value": "проверка блокировки поля количество при создании документа Заказ (услуга)"
+		},
+		{
+			"name": "epic",
+			"value": "проверка блокировки поля количество при создании документа Заказ (услуга)"
+		},
+		{
+			"name": "tag",
+			"value": "tree"
+		},
+		{
+			"name": "severity",
+			"value": "critical"
+		},
+		{
+			"name": "tag",
+			"value": "critical"
+		},
+		{
+			"name": "package",
+			"value": "Модуль 6"
+		},
+		{
+			"name": "host",
+			"value": "DESKTOP-5ND5995"
+		}
+	],
+	"links": [],
+	"attachments": [
+		{
+			"name": "screenshot",
+			"source": "89dd40d2-f587-48d6-b09d-80cc7094865f-attachment.png",
+			"type": "image/png"
+		},
+		{
+			"name": "ТекущееЗначениеТаблицы.mxl",
+			"source": "6d96d438-c4d3-45c0-90c0-85a28309d3de-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ТекущееЗначениеТаблицы.html",
+			"source": "89e37bd2-f994-4445-a276-83e43ddb1453-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "ЖурналРегистрации.mxl",
+			"source": "e6d80e5a-5fd9-47d9-8c6b-db42ce80d59f-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ЖурналРегистрации.html",
+			"source": "4981e07b-327d-41e3-ba7d-c5e1077c5e8c-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "ЖурналРегистрации.xlsx",
+			"source": "71cf6ee8-044b-4b92-bd0b-86e40c5fd99d-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "СостояниеАктивнойФормы.mxl",
+			"source": "1ae0585b-6b27-4729-9586-1b81ae748e53-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "СостояниеАктивнойФормы.html",
+			"source": "3fb0e2f3-17e8-42b6-92a4-596f8493d1b9-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "СостояниеАктивнойФормы.xlsx",
+			"source": "c98ff944-bcdc-4252-b51a-5e0ea49de31c-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "СостояниеВсехФорм.mxl",
+			"source": "0fc5175d-a1e4-4f1a-afb5-5e8071a3efc8-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "СостояниеВсехФорм.html",
+			"source": "a37cc48b-0935-4b79-b3c2-cb29e7cbd7e2-attachment.html",
+			"type": "html"
+		},
+		{
+			"name": "СостояниеВсехФорм.xlsx",
+			"source": "bc8d52b7-388e-4112-8fda-ce7af00e0abf-attachment.xlsx",
+			"type": "xlsx"
+		},
+		{
+			"name": "ДанныеОСетевыхСоединениях.txt",
+			"source": "e9c0dfb2-1cf7-49e7-941e-016fc1f7848c-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "ДанныеОПроцессахОС.txt",
+			"source": "98b42a27-374b-47a4-ac3b-8a1f6ce1558f-attachment.txt",
+			"type": "txt"
+		},
+		{
+			"name": "ЗначенияПеременных.mxl",
+			"source": "59862d5a-df8f-4a5c-a223-16f45c802ce9-attachment.mxl",
+			"type": "mxl"
+		},
+		{
+			"name": "ЗначенияПеременных.html",
+			"source": "fa11a629-588c-48b9-bc77-139adb4bff85-attachment.html",
+			"type": "html"
+		}
+	],
+	"description": null
+}
